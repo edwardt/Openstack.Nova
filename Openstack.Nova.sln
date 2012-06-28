@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova", "Openstack.Nova\Openstack.Nova.csproj", "{83FE10E7-D0D1-40B5-906F-18CD802264E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{6089BCD9-555A-46DF-A5AC-138BD629DA33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rdParty", "3rdParty", "{9689549E-5E2B-4089-A238-7BE3D5B902DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Functional.Tests", "OpenStack.Nova.Functional.Tests\OpenStack.Nova.Functional.Tests.csproj", "{F9713235-EECC-44ED-B5BF-1A96B3185B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Unit.Tests", "OpenStack.Nova.Unit.Tests\OpenStack.Nova.Unit.Tests.csproj", "{6B8F6BED-5295-417F-95FD-DFE326BB7A52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
