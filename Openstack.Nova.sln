@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova", "Openstack.Nova\Openstack.Nova.csproj", "{83FE10E7-D0D1-40B5-906F-18CD802264E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova", "Openstack.Nova\OpenStack.Nova.csproj", "{83FE10E7-D0D1-40B5-906F-18CD802264E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{6089BCD9-555A-46DF-A5AC-138BD629DA33}"
 EndProject

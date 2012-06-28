@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Openstack.Nova
 {
-    public class Class1
+    public class Client
     {
     }
 }
