@@ -11,12 +11,38 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Functional.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Unit.Tests", "OpenStack.Nova.Unit.Tests\OpenStack.Nova.Unit.Tests.csproj", "{6B8F6BED-5295-417F-95FD-DFE326BB7A52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestItems", "TestItems", "{684D4580-200A-410D-8D46-E8A44D8C0599}"
+	ProjectSection(SolutionItems) = preProject
+		TestData\credential.txt = TestData\credential.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova.Combinatorial.Tests", "Openstack.Nova.Combinatorial.Tests\Openstack.Nova.Combinatorial.Tests.csproj", "{232878E2-818E-4C62-BFA7-4BE2428A0CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova.Performance.Tests", "Openstack.Nova.Performance.Tests\Openstack.Nova.Performance.Tests.csproj", "{54807BB4-DE20-4476-AFFD-0E84617393A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54807BB4-DE20-4476-AFFD-0E84617393A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54807BB4-DE20-4476-AFFD-0E84617393A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54807BB4-DE20-4476-AFFD-0E84617393A4}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{54807BB4-DE20-4476-AFFD-0E84617393A4}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{54807BB4-DE20-4476-AFFD-0E84617393A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54807BB4-DE20-4476-AFFD-0E84617393A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,10 +51,11 @@ Global
 		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B8F6BED-5295-417F-95FD-DFE326BB7A52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Openstack.Nova\OpenStack.Nova.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
