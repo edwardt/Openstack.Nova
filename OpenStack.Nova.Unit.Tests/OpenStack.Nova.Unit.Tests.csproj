@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Openstack.Nova\OpenStack.Nova.csproj">
+    <ProjectReference Include="..\Openstack.Nova\OpenStack.Nova.Client.csproj">
       <Project>{83FE10E7-D0D1-40B5-906F-18CD802264E4}</Project>
-      <Name>OpenStack.Nova</Name>
+      <Name>OpenStack.Nova.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

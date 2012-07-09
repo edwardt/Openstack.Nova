@@ -2,9 +2,9 @@ using System;
 
 namespace OpenStack.Nova.ServiceModel
 {
-	public class GetAvailableImage
+	public class GetAvailableImages
 	{
-		public GetAvailableImage ()
+		public GetAvailableImages ()
 		{
 		}
 	}

@@ -6,6 +6,7 @@ namespace OpenStack.Nova.ServiceModel
 	{
 		public CreateImageMetaDataItem ()
 		{
+			//call update
 		}
 	}
 }

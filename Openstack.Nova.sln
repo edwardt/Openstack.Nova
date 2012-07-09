@@ -1,11 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova", "Openstack.Nova\OpenStack.Nova.csproj", "{83FE10E7-D0D1-40B5-906F-18CD802264E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Client", "Openstack.Nova\OpenStack.Nova.Client.csproj", "{83FE10E7-D0D1-40B5-906F-18CD802264E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{6089BCD9-555A-46DF-A5AC-138BD629DA33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rdParty", "3rdParty", "{9689549E-5E2B-4089-A238-7BE3D5B902DE}"
+	ProjectSection(SolutionItems) = preProject
+		3rdParty\sqlite3.dll = 3rdParty\sqlite3.dll
+		3rdParty\Net40\Newtonsoft.Json.dll = 3rdParty\Net40\Newtonsoft.Json.dll
+		3rdParty\ServiceStack.ServiceInterface.dll = 3rdParty\ServiceStack.ServiceInterface.dll
+		3rdParty\ServiceStack.Interfaces.dll = 3rdParty\ServiceStack.Interfaces.dll
+		3rdParty\ServiceStack.dll = 3rdParty\ServiceStack.dll
+		3rdParty\Moq.dll = 3rdParty\Moq.dll
+		3rdParty\Mono.Data.Sqlite.dll = 3rdParty\Mono.Data.Sqlite.dll
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Functional.Tests", "OpenStack.Nova.Functional.Tests\OpenStack.Nova.Functional.Tests.csproj", "{F9713235-EECC-44ED-B5BF-1A96B3185B98}"
 EndProject
@@ -20,6 +29,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova.Combinatoria
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova.Performance.Tests", "Openstack.Nova.Performance.Tests\Openstack.Nova.Performance.Tests.csproj", "{54807BB4-DE20-4476-AFFD-0E84617393A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.ServiceModel", "OpenStack.Nova.ServiceModel\OpenStack.Nova.ServiceModel.csproj", "{878A2302-AB3E-4847-9AF9-06F928D2F433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openstack.Nova.Client.Console", "Openstack.Nova.Client.Console\Openstack.Nova.Client.Console.csproj", "{A1D18695-4442-4C2B-9237-AD5E4957331A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenStack.Nova.Common", "OpenStack.Nova.Common\OpenStack.Nova.Common.csproj", "{183766F4-1C2F-45E1-9D04-07A7B4C966DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +42,12 @@ Global
 		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{183766F4-1C2F-45E1-9D04-07A7B4C966DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183766F4-1C2F-45E1-9D04-07A7B4C966DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183766F4-1C2F-45E1-9D04-07A7B4C966DA}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{183766F4-1C2F-45E1-9D04-07A7B4C966DA}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{183766F4-1C2F-45E1-9D04-07A7B4C966DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183766F4-1C2F-45E1-9D04-07A7B4C966DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{232878E2-818E-4C62-BFA7-4BE2428A0CAE}.Default|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,6 +68,18 @@ Global
 		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83FE10E7-D0D1-40B5-906F-18CD802264E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878A2302-AB3E-4847-9AF9-06F928D2F433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878A2302-AB3E-4847-9AF9-06F928D2F433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878A2302-AB3E-4847-9AF9-06F928D2F433}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{878A2302-AB3E-4847-9AF9-06F928D2F433}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{878A2302-AB3E-4847-9AF9-06F928D2F433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878A2302-AB3E-4847-9AF9-06F928D2F433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D18695-4442-4C2B-9237-AD5E4957331A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D18695-4442-4C2B-9237-AD5E4957331A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D18695-4442-4C2B-9237-AD5E4957331A}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D18695-4442-4C2B-9237-AD5E4957331A}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{A1D18695-4442-4C2B-9237-AD5E4957331A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D18695-4442-4C2B-9237-AD5E4957331A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9713235-EECC-44ED-B5BF-1A96B3185B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,7 +88,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Openstack.Nova\OpenStack.Nova.csproj
+		StartupItem = Openstack.Nova\OpenStack.Nova.Client.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

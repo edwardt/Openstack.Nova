@@ -30,10 +30,78 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="ServiceStack">
+      <HintPath>..\3rdParty\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface">
+      <HintPath>..\3rdParty\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\3rdParty\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\3rdParty\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\3rdParty\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Operations\API\GetAPIExtension.cs" />
+    <Compile Include="Operations\Server\CreateServer.cs" />
+    <Compile Include="Operations\Server\DeleteServer.cs" />
+    <Compile Include="Operations\Flavor\GetFlavorInfo.cs" />
+    <Compile Include="Operations\Image\GetImageInfo.cs" />
+    <Compile Include="Operations\Tenant\GetTenantLimit.cs" />
+    <Compile Include="Operations\Image\DeleteImage.cs" />
+    <Compile Include="Operations\Server\CreateServerSet.cs" />
+    <Compile Include="Operations\API\GetAPIInfo.cs" />
+    <Compile Include="Operations\Server\UpdateServer.cs" />
+    <Compile Include="Operations\Server\UpdateServerSet.cs" />
+    <Compile Include="Operations\Tenant\GetTenantServerInfo.cs" />
+    <Compile Include="Operations\Tenant\GetTenantServerSetInfo.cs" />
+    <Compile Include="Operations\Flavor\GetFlavorSetInfo.cs" />
+    <Compile Include="Operations\Image\GetImageSetInfo.cs" />
+    <Compile Include="Operations\Server\DeleteServerSet.cs" />
+    <Compile Include="Operations\ImageMetaData\CreateImageMetaDataItem.cs" />
+    <Compile Include="Operations\API\GetAPIAvailableExtensions.cs" />
+    <Compile Include="Operations\Flavor\GetAvailableFlavors.cs" />
+    <Compile Include="Operations\Image\GetAvailableImages.cs" />
+    <Compile Include="Operations\ServerMetaData\CreateServerMetaData.cs" />
+    <Compile Include="Operations\ServerMetaData\CreateServerMetaDataItem.cs" />
+    <Compile Include="Operations\ServerMetaData\DeleteServerMetaDataItem.cs" />
+    <Compile Include="Operations\ServerMetaData\GetServerMetaData.cs" />
+    <Compile Include="Operations\ServerMetaData\UpdateServerMetaData.cs" />
+    <Compile Include="Operations\ServerMetaData\UpdateServerMetaDataItem.cs" />
+    <Compile Include="Operations\ServerMetaData\GetServerMetaDataItem.cs" />
+    <Compile Include="Operations\Network\GetServerIP.cs" />
+    <Compile Include="Operations\Network\GetServerIPs.cs" />
+    <Compile Include="Operations\Server\UpdateServerManagementInfo.cs" />
+    <Compile Include="Operations\Server\RebootServer.cs" />
+    <Compile Include="Operations\Server\RebuildServer.cs" />
+    <Compile Include="Operations\Server\ResizeServer.cs" />
+    <Compile Include="Operations\Server\RevertServerResize.cs" />
+    <Compile Include="Operations\Server\ConfirmServerResize.cs" />
+    <Compile Include="Operations\Server\CreateServerImage.cs" />
+    <Compile Include="Operations\ImageMetaData\CreateImageMetaData.cs" />
+    <Compile Include="Operations\ImageMetaData\DeleteImageMetaDataItem.cs" />
+    <Compile Include="Operations\ImageMetaData\GetImageMetaData.cs" />
+    <Compile Include="Operations\ImageMetaData\GetImageMetaDataItem.cs" />
+    <Compile Include="Operations\ImageMetaData\UpdateImageMetaData.cs" />
+    <Compile Include="Operations\ImageMetaData\UpdateImageMetaDataItem.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Operations\" />
+    <Folder Include="Operations\Server\" />
+    <Folder Include="Operations\ImageMetaData\" />
+    <Folder Include="Operations\Flavor\" />
+    <Folder Include="Operations\Image\" />
+    <Folder Include="Operations\Tenant\" />
+    <Folder Include="Operations\API\" />
+    <Folder Include="Operations\ServerMetaData\" />
+    <Folder Include="Operations\Network\" />
+  </ItemGroup>
 </Project>

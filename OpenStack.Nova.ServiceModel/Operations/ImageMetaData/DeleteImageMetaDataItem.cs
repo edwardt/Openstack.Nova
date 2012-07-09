@@ -2,9 +2,9 @@ using System;
 
 namespace OpenStack.Nova.ServiceModel
 {
-	public class DeleteServerMetaDataItem
+	public class DeleteImageMetaDataItem
 	{
-		public DeleteServerMetaDataItem ()
+		public DeleteImageMetaDataItem ()
 		{
 		}
 	}

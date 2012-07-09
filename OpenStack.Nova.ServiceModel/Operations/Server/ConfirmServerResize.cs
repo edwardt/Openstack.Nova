@@ -2,9 +2,9 @@ using System;
 
 namespace OpenStack.Nova.ServiceModel
 {
-	public class ConfirmResizeServer
+	public class ConfirmServerResize
 	{
-		public ConfirmResizeServer ()
+		public ConfirmServerResize ()
 		{
 		}
 	}

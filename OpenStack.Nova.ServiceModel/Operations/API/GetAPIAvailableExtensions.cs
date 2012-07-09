@@ -1,12 +1,17 @@
-using System;
-
 namespace OpenStack.Nova.ServiceModel
 {
-	public class GetAPIExtensionSet
+	using System;
+	using System.Collections.Generic;
+
+
+	public class GetAPIAvailableExtensions
 	{
-		public GetAPIExtensionSet()
+		public GetAPIAvailableExtensions()
 		{
+
 		}
+
+
 	}
 }
 

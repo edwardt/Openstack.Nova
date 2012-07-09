@@ -1,16 +1,14 @@
-namespace Openstack.Nova
+namespace Openstack.Nova.Constants
 {
 	using System;
+	using System.Web;
+	using ServiceStack.DataAnnotations;
 
-	enum Version 
-	{
-		current = 1.1
-	}
 
 	public struct ApiInfo
 	{
-		const int Version = Version.current;
-		const string Resource = "NovaCompute";
+		const string version = @"1.1";
+		Uri DefaultResourceUrl;
 	}
 }
 

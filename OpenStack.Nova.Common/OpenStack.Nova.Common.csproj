@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A1D18695-4442-4C2B-9237-AD5E4957331A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Openstack.Nova.Client.Console</RootNamespace>
-    <AssemblyName>Openstack.Nova.Client.Console</AssemblyName>
+    <ProjectGuid>{183766F4-1C2F-45E1-9D04-07A7B4C966DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenStack.Nova.Common</RootNamespace>
+    <AssemblyName>OpenStack.Nova.Common</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -18,7 +18,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>true</Externalconsole>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -26,36 +26,14 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>true</Externalconsole>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>..\3rdParty\Mono.Data.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="Moq">
-      <HintPath>..\3rdParty\Moq.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Interfaces">
-      <HintPath>..\3rdParty\ServiceStack.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.ServiceInterface">
-      <HintPath>..\3rdParty\ServiceStack.ServiceInterface.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack">
-      <HintPath>..\3rdParty\ServiceStack.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyClass.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="RuntimeStates.cs" />
-    <Compile Include="Entry.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\Openstack.Nova\OpenStack.Nova.Client.csproj">
-      <Project>{83FE10E7-D0D1-40B5-906F-18CD802264E4}</Project>
-      <Name>OpenStack.Nova.Client</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

@@ -2,9 +2,9 @@ using System;
 
 namespace OpenStack.Nova.ServiceModel
 {
-	public class GetServerMetaDataItem
+	public class GetImageMetaDataItem
 	{
-		public GetServerMetaDataItem ()
+		public GetImageMetaDataItem ()
 		{
 		}
 	}
