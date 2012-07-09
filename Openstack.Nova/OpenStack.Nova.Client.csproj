@@ -63,6 +63,8 @@
     <Compile Include="INoveHttpResponse.cs" />
     <Compile Include="Constant\ResourceUrl.cs" />
     <Compile Include="ApiInfo.cs" />
+    <Compile Include="Exception\NovaException.cs" />
+    <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />

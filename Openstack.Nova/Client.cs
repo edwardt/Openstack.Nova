@@ -1,11 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Openstack.Nova
+﻿namespace Openstack.Nova
 {
-    public class Client
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+	using ServiceStack.Common;
+	using ServiceStack.Logging;
+	using ServiceStack.DesignPatterns;
+
+    public class NovaClient
     {
+		ILog logger;
+
+		public NovaClient()
+		{
+
+
+		}
+
+
+
     }
 }

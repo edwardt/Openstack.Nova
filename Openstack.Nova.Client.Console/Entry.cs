@@ -5,6 +5,7 @@ namespace Openstack.Nova.Client.Console
 	using System.IO;
 	using Openstack.Nova.Client;
 	using ServiceStack.Configuration;
+	using ServiceStack.DesignPatterns;
 	using ServiceStack.Logging;
 
 	class Entry
@@ -14,10 +15,11 @@ namespace Openstack.Nova.Client.Console
 		public static void Main (string[] args)
 		{
 			Console.WriteLine ("Hello World!");
+			using () {
+				while(Console.ReadLine())
+				{
 
-			while(Console.ReadLine())
-			{
-
+				}
 			}
 
 		}
